@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "dipti_journey");
+$conn = new mysqli("localhost", "awsuser", "dipti@123", "dipti_journey");
 
 // Get the ID from the URL
 $item_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -61,4 +61,5 @@ $result = $conn->query($sql);
 </div>
 
 </body>
+
 </html>
