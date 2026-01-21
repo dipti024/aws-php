@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli("localhost", "root", "", "dipti_journey");
+$conn = new mysqli("localhost", "awsuser", "dipti@123", "dipti_journey");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -54,4 +54,5 @@ $result = $conn->query($sql);
 </div>
 
 </body>
+
 </html>
