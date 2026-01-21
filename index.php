@@ -1,5 +1,8 @@
 <?php
 // Database connection
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $conn = new mysqli("localhost", "awsuser", "dipti@123", "dipti_journey");
 
 if ($conn->connect_error) {
@@ -56,3 +59,4 @@ $result = $conn->query($sql);
 </body>
 
 </html>
+
