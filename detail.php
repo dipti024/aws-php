@@ -1,8 +1,8 @@
 <?php
 $host = "database-1.cfci0i2kiu6v.ap-south-1.rds.amazonaws.com";
 $user = "dayan";
-$pass = "YOUR_RDS_PASSWORD";
-$db   = "dipti_journey";
+$pass = "dayannani";
+$db   = "myapp";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
@@ -68,4 +68,5 @@ $result = $conn->query($sql);
 </body>
 
 </html>
+
 
