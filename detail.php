@@ -1,5 +1,10 @@
 <?php
-$conn = new mysqli("localhost", "awsuser", "dipti@123", "dipti_journey");
+$host = "database-1.cfci0i2kiu6v.ap-south-1.rds.amazonaws.com";
+$user = "dayan";
+$pass = "YOUR_RDS_PASSWORD";
+$db   = "dipti_journey";
+
+$conn = new mysqli($host, $user, $pass, $db);
 
 // Get the ID from the URL
 $item_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -63,3 +68,4 @@ $result = $conn->query($sql);
 </body>
 
 </html>
+
